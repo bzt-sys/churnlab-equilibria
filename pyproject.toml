@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "churnlab-equilibria"
+version = "0.1.0"
+description = "GPU-accelerated population churn simulation and benchmarking"
+authors = [{name = "DivineComedy Labs"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=2.0",
+  "tqdm>=4.66",
+  "matplotlib>=3.7",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.6.0", "pre-commit>=3.3", "build>=1.2", "twine>=4.0"]
+
+[tool.setuptools]
+packages = ["population", "strategy", "utils", "viz"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: ChurnLab : Equilibria
+authors:
+  - family-names: Thompson
+    given-names: Benjamin
+version: 0.1.0
+date-released: 2025-11-01
+license: MIT
