@@ -1,0 +1,51 @@
+# === Python build + cache ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.eggs/
+build/
+dist/
+viz/whitepaper.py
+viz/animators.py
+viz/exporters.py
+# === Generated simulation outputs ===
+output/
+*.csv
+*.npz
+*.npy
+*.zip
+*.jsonl
+*.parquet
+*.png
+*.jpg
+
+# === Proprietary / Virgil components ===
+# Entire virgil directory (any depth under strategy/)
+strategy/virgil/
+strategy/virgil/**
+
+# Any private strategy folders you might stage
+strategy/private_*/
+strategy/private_*/**
+
+# Common ML artifacts
+checkpoints/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+
+
+# === Environments and OS cruft ===
+.env
+.venv/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# === IDE ===
+.vscode/
+.idea/
